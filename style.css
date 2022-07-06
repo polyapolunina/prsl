@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
     width: 100%;
 }
 
@@ -12,16 +12,14 @@ ul, li {
 }
 
 .container {
-    display: flex;
     margin: 0 auto; /*позиционирование по центру*/
 }
 
 h1 {
     color: white;
-    font-size: 2em;
-    margin-right: 120px;
-    margin-left: 60px;
-    letter-spacing: 0.1em;
+    font-size: 1.5em;
+    margin-right: 90px;
+    margin-left: 10px;
     text-transform: uppercase;
 }
 
@@ -41,12 +39,12 @@ header a {
 .menu li a {
     text-transform: uppercase;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 18px;
     letter-spacing: 0.1em;
 }
 
 .menu li {
-    margin-right: 65px;
+    margin-right: 55px;
 }
 
 .nav {
@@ -57,7 +55,7 @@ header a {
 }
 
 .tel {
-    font-size: 18px;
+    font-size: 20px;
     text-decoration: none;
     margin-left: 60px;
     letter-spacing: 0.1em;
@@ -65,4 +63,31 @@ header a {
 
 .sect {
     height: 1700px;
+}
+
+h2 {
+    font-size: 45px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    text-align: center;
+}
+
+div.home {
+    width: 1000px;
+    height: 400px;
+    display: flex;
+    padding: 35px;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px #ccc;
+}
+
+p {
+    font-size: 22px;
+}
+
+img {
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
 }
