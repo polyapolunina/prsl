@@ -76,7 +76,7 @@ svg {
 }
 
 .sect3 {
-    height: 900px;
+    height: 1300px;
 }
 
 h2, h4, h5 {
@@ -131,9 +131,39 @@ div.prsl {
     box-shadow: 0 4px 20px #ccc;
 }
 
+div.serv {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 60px;
+}
+
+div.serv_ {
+    display: flex;
+    flex-direction: row;
+}
+
+.serv1, .serv2 {
+    width: 500px;
+    height: 350px;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 4px 20px #ccc;
+    margin: 0 auto;
+}
+
+.serv3, .serv4 {
+    width: 500px;
+    height: 350px;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 4px 20px #ccc;
+    margin: 0 auto;
+}
+
+
 div.equip {
     width: 900px;
-    height: 600px;
+    height: 1000px;
     display: flex;
     padding: 35px;
     margin: 0 auto;
