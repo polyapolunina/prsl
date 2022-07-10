@@ -71,11 +71,29 @@ svg {
     height: 1200px;
 }
 
-h2, h3, h4 {
+.sect2 {
+    height: 1000px;
+}
+
+.sect3 {
+    height: 900px;
+}
+
+h2, h4, h5 {
     font-size: 40px;
     padding-top: 35px;
     padding-bottom: 35px;
     text-align: center;
+}
+
+h3 {
+    font-size: 35px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    text-align: center;
+    color: white;
+    background: #003a00;
+    font-weight: lighter;
 }
 
 div.home {
@@ -96,6 +114,30 @@ div.home1 {
     padding: 35px;
     margin: 0 auto;
     margin-top: 20px;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 4px 20px #ccc;
+}
+
+div.prsl {
+    width: 900px;
+    height: 700px;
+    display: flex;
+    padding: 35px;
+    margin: 0 auto;
+    margin-top: 20px;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 4px 20px #ccc;
+}
+
+div.equip {
+    width: 900px;
+    height: 600px;
+    display: flex;
+    padding: 35px;
+    margin: 0 auto;
+    margin-bottom: 40px;
     border-radius: 10px;
     background: #fff;
     box-shadow: 0 4px 20px #ccc;
