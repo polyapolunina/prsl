@@ -148,16 +148,13 @@ div.serv_ {
     flex-direction: row;
 }
 
-div.serv_0 {
-    display: flex;
-    flex-direction: row;
-}
+
 
 .serv {
     width: 500px;
-    height: 300px;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-column-gap: 2em;
     padding: 35px;
     margin: 0 auto;
     margin-top: 20px;
@@ -165,6 +162,7 @@ div.serv_0 {
     background: #fff;
     box-shadow: 0 4px 20px #ccc;
 }
+.serv b{align-self:center;}
 
 div.equip {
 
