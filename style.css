@@ -328,6 +328,7 @@ footer {
          top:4.25em;
          background: url("11111.png") no-repeat ;
      }
+     h2{font-size: 35px;}
 }
 
 @media(max-width: 460px) {
