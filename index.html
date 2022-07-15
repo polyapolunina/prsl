@@ -39,24 +39,29 @@
     <header id="header" class="header">
         <div class="container">
             <div class="nav">
-                <div class="mainMenu" id="burger">
+                <div class="mainMenuOpenButton" id="burger">
                     <img src="hamburger-menu.svg" alt="кнопка меню">
                 </div>
+                
                 <h1><b>Найдем <br> прослушку</b></h1> <!-- название организации либо логотип-->
-                <ul class="menu" id="menu">
+                <div class="menu" id="menu">
+                    <div class="mainMenuCloseButton" id="cross">
+                        <img src="cross.svg" alt="кнопка закрытия меню">
+                    </div>
+                    <ul>
                     <li>
-                        <a href="#home">Главная</a>
+                        <a href="#home" id="menuItem">Главная</a>
                     </li>
                     <li>
-                        <a href="#services">Услуги</a> <!-- description -->
+                        <a href="#services" id="menuItem">Услуги</a> <!-- description -->
                     </li>
                     <li>
-                        <a href="#equipment">Оборудование</a>
+                        <a href="#equipment" id="menuItem">Оборудование</a>
                     </li>
                     <li>
-                        <a href="#footer">Контакты</a>
-                    </li>
-                </ul>
+                        <a href="#footer" id="menuItem">Контакты</a>
+                    </li></ul>
+                </div>
 
                 <a href="tel:+79258091822" class="tel">
                     <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
