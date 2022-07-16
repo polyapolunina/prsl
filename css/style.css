@@ -443,3 +443,5 @@ footer {
         text-decoration: none;
     }
 }
+footer .container{display: grid;
+grid-template-columns: 1fr 1fr 1fr;}
