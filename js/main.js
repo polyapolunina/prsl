@@ -1,9 +1,8 @@
 const burger = document.getElementById('burger')
 const cross = document.getElementById('cross')
 const menu = document.getElementById('menu')
-const menuItem = document.getElementById('menuItem')
-
-burger.onclick = () => {
+let menuitem = document.getElementById('menuItems');
+function menuShowOrClose() {
     // menu.className = "menuFalse"
     if (menu.className == "menu") {
         menu.className = "menuShow"
@@ -11,19 +10,14 @@ burger.onclick = () => {
     else if (menu.className == "menuShow") {
         menu.className = "menu"
     }
+}
+burger.onclick = () => {
+    menuShowOrClose()
 }
 cross.onclick = () => {
-    // menu.className = "menuFalse"
-    if (menu.className == "menu") {
-        menu.className = "menuShow"
-    }
-    else if (menu.className == "menuShow") {
-        menu.className = "menu"
-    }
+    menuShowOrClose()
 }
-menuItem.onclick = () => {
-    // menu.className = "menuFalse"
-    if (menu.className == "menuShow") {
-        menu.className = "menu"
-    }
+menuitem.onclick = () => {
+    menuShowOrClose();
 }
+
