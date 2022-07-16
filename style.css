@@ -4,16 +4,19 @@ body {
     font-family: 'Nunito Sans', sans-serif;
     width: 100%;
     background: whitesmoke;
+    min-width: 380px;
 }
 
-ul, li {
+ul,
+li {
     display: block;
     padding: 0;
     margin: 0;
 }
 
 .container {
-    margin: 0 auto; /*позиционирование по центру*/
+    margin: 0 auto;
+    /*позиционирование по центру*/
     max-width: 1250px;
 }
 
@@ -32,20 +35,20 @@ header a {
 
 }
 
-.menu {
+.menu ul {
     display: flex;
     flex-direction: row;
     padding-left: 8em;
 }
 
-.menu li a {
+.menu ul li a {
     text-transform: uppercase;
     text-decoration: none;
     font-size: 18px;
     letter-spacing: 0.1em;
 }
 
-.menu li {
+.menu ul li {
     margin-right: 3em;
 }
 
@@ -54,12 +57,20 @@ header a {
     align-items: center;
     padding: 35px;
     margin: 0 auto;
+
+}
+
+.container:nth-of-type(0) {
+    position: relative;
+}
+
+.nav a svg {
+    margin-right: 10px;
 }
 
 .tel {
     font-size: 20px;
     text-decoration: none;
-    margin-left: 20px;
     letter-spacing: 0.1em;
 }
 
@@ -107,10 +118,13 @@ div.home1 {
     background: #fff;
     box-shadow: 0 4px 20px #ccc;
 }
-.home1 .picture {width: 33.25em ;
-height:25em;
+
+.home1 .picture {
+    width: 33.25em;
+    height: 25em;
     object-fit: cover;
 }
+
 div.prsl {
 
 
@@ -122,30 +136,39 @@ div.prsl {
     background: #fff;
     box-shadow: 0 4px 20px #ccc;
 }
-.prices{display: grid;
-grid-template-columns: 1fr 1fr;
-    justify-items: center;}
+
+.prices {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+}
+
 div.serv_ {
     display: flex;
     flex-direction: row;
 }
 
-div.serv_0 {
-    display: flex;
-    flex-direction: row;
-}
+
 
 .serv {
     width: 500px;
-    height: 300px;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-column-gap: 2em;
     padding: 35px;
     margin: 0 auto;
     margin-top: 20px;
     border-radius: 10px;
     background: #fff;
     box-shadow: 0 4px 20px #ccc;
+}
+
+.serv b {
+    align-self: center;
+}
+
+.serv {
+    align-self: center;
 }
 
 div.equip {
@@ -166,34 +189,250 @@ p {
 
 
 .ph {
-   display: flex;
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-.ph li {display: flex;
-align-items: center;}
-.ph li b {padding-left: 2em;}
+
+.ph li {
+    display: flex;
+    align-items: center;
+}
+
+.ph li b {
+    padding-left: 2em;
+}
+
+.ph li img {
+    width: 6.25em;
+    height: 3.75em;
+}
+
 footer {
     background: #003a00;
     height: 300px;
-}
-
-@media(max-width: 1170px)
-{
-    .prices{grid-template-columns: 1fr;}
-    div.home1{grid-template-columns: 1fr;
-    justify-items: center}
-    .ph li {padding-top: 2em;}
-}
-@media(max-width: 1170px)
-{.menu{display: none;}
-    h1{display: none;}
-    .nav{justify-content: space-between;}
 }
 
 .icon-excel {
     background-image: url("hamburger-menu.svg");
 
 }
-.mainMenu img{width: 50px;
-height: 50px; filter: invert(100%);}
+
+.mainMenuOpenButton img {
+    width: 50px;
+    height: 50px;
+    filter: invert(100%);
+
+}
+
+.mainMenuOpenButton {
+    width: 50px;
+    height: 50px;
+    display: none;
+}
+
+.mainMenuCloseButton {
+    width: 50px;
+    height: 50px;
+    display: none;
+}
+
+.mainMenuCloseButton img {
+    width: 50px;
+    height: 50px;
+    filter: invert(100%);
+
+}
+
+
+@media(max-width: 1170px) {
+    .prices {
+        grid-template-columns: 1fr;
+    }
+    .menuShow li {
+        font-size: 2em;
+        font-weight: 500;
+        padding: 0.8em;
+    }
+
+    .menuShow li a {
+        text-decoration: none;
+    }
+    .menu {
+        display: none;
+    }
+
+  
+
+    .menuShow {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        padding: 0.5em;
+        top: 7.5em;
+        background: url("11111.png") no-repeat;
+    }
+
+    div.home1 {
+        grid-template-columns: 1fr;
+        justify-items: center
+    }
+
+    .ph li {
+        padding-top: 2em;
+    }
+
+    .mainMenuOpenButton {
+        display: block;
+    }
+
+    .nav {
+
+        justify-content: center;
+
+    }
+
+    h1 {
+        display: none;
+    }
+
+    .nav {
+        justify-content: space-between;
+    }
+}
+
+
+
+@media(max-width: 600px) {
+    div.home1 {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    div.prsl {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .serv {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    div.equip {
+        padding-left: 16px;
+        padding-right: 16px;
+    } 
+    
+    .menu {
+        display: none;
+    }
+
+    .menuShow {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        padding: 0.5em;
+        top: 7.5em;
+        background: url("11111.png") no-repeat;
+    }
+}
+
+@media(max-width: 560px) {
+    .home1 .picture {
+        width: 350px;
+        height: 200px;
+    }
+    .mainMenuCloseButton{display: block;}
+    .menu {
+        display: none;
+    }
+
+    .serv {
+        width: 350px;
+    }
+
+    .nav {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .menuShow {
+        top: 0;
+        left: 0;
+
+        width: 100%;
+        height: 100%;
+
+        position: fixed;
+        padding: 0.5em;
+        background: url("11111.png") no-repeat;
+
+    }
+
+    .menuShow ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menuShow li {
+        font-size: 2em;
+        font-weight: 500;
+        padding: 0.8em;
+    }
+
+    .menuShow li a {
+        text-decoration: none;
+    }
+
+    h2 {
+        font-size: 35px;
+    }
+}
+
+@media(max-width: 460px) {
+    .nav {
+        padding: 10px;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .menuShow {
+        top: 0;
+        left: 0;
+
+        width: 100%;
+        height: 100%;
+
+        position: fixed;
+        padding: 0.5em;
+        background: url("11111.png") no-repeat;
+
+    }
+
+    .menuShow ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menuShow li {
+        font-size: 2em;
+        font-weight: 500;
+        padding: 0.8em;
+    }
+
+    .menuShow li a {
+        text-decoration: none;
+    }
+}
+.sect3{display: none;}; /* временно    */
