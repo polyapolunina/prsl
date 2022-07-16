@@ -142,6 +142,15 @@ div.prsl {
     grid-template-columns: 1fr 1fr;
     justify-items: center;
 }
+.prices:nth-last-of-type(1){
+    display: flex;
+    justify-content: center;
+    padding: 35px;
+    margin: 0 auto;
+    margin-top: 20px;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 4px 20px #ccc;}
 
 div.serv_ {
     display: flex;
