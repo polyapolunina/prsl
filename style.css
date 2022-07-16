@@ -14,13 +14,12 @@ ul, li {
 
 .container {
     margin: 0 auto; /*позиционирование по центру*/
+    max-width: 1250px;
 }
 
 h1 {
     color: white;
     font-size: 1.5em;
-    margin-right: 90px;
-    margin-left: 30px;
     text-transform: uppercase;
 }
 
@@ -30,12 +29,13 @@ h1 {
 
 header a {
     color: white;
-    margin: 0 auto;
+
 }
 
 .menu {
     display: flex;
     flex-direction: row;
+    padding-left: 8em;
 }
 
 .menu li a {
@@ -46,13 +46,13 @@ header a {
 }
 
 .menu li {
-    margin-right: 55px;
+    margin-right: 3em;
 }
 
 .nav {
     display: flex;
     align-items: center;
-    padding: 40px;
+    padding: 35px;
     margin: 0 auto;
 }
 
@@ -63,23 +63,10 @@ header a {
     letter-spacing: 0.1em;
 }
 
-svg {
-    padding-left: 40px;
-}
 
-.sect {
-    height: 1200px;
-}
 
-.sect2 {
-    height: 1000px;
-}
 
-.sect3 {
-    height: 1300px;
-}
-
-h2, h4, h5 {
+h2 {
     font-size: 40px;
     padding-top: 35px;
     padding-bottom: 35px;
@@ -97,8 +84,8 @@ h3 {
 }
 
 div.home {
-    width: 1100px;
-    height: 400px;
+
+
     display: flex;
     padding: 35px;
     margin: 0 auto;
@@ -108,9 +95,11 @@ div.home {
 }
 
 div.home1 {
-    width: 1100px;
-    height: 400px;
-    display: flex;
+
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2em;
     padding: 35px;
     margin: 0 auto;
     margin-top: 20px;
@@ -118,10 +107,13 @@ div.home1 {
     background: #fff;
     box-shadow: 0 4px 20px #ccc;
 }
-
+.home1 .picture {width: 33.25em ;
+height:25em;
+    object-fit: cover;
+}
 div.prsl {
-    width: 900px;
-    height: 700px;
+
+
     display: flex;
     padding: 35px;
     margin: 0 auto;
@@ -130,7 +122,9 @@ div.prsl {
     background: #fff;
     box-shadow: 0 4px 20px #ccc;
 }
-
+.prices{display: grid;
+grid-template-columns: 1fr 1fr;
+    justify-items: center;}
 div.serv_ {
     display: flex;
     flex-direction: row;
@@ -141,10 +135,11 @@ div.serv_0 {
     flex-direction: row;
 }
 
-.serv1, .serv2, .serv3, .serv4 {
+.serv {
     width: 500px;
     height: 300px;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     padding: 35px;
     margin: 0 auto;
     margin-top: 20px;
@@ -154,7 +149,7 @@ div.serv_0 {
 }
 
 div.equip {
-    width: 900px;
+
     height: 1000px;
     display: flex;
     padding: 35px;
@@ -169,15 +164,36 @@ p {
     font-size: 18px;
 }
 
-img {
-    padding-right: 10px;
-    padding-top: 20px;
-}
-.ph {
-    padding-top: 50px;
-}
 
+.ph {
+   display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.ph li {display: flex;
+align-items: center;}
+.ph li b {padding-left: 2em;}
 footer {
     background: #003a00;
     height: 300px;
 }
+
+@media(max-width: 1170px)
+{
+    .prices{grid-template-columns: 1fr;}
+    div.home1{grid-template-columns: 1fr;
+    justify-items: center}
+    .ph li {padding-top: 2em;}
+}
+@media(max-width: 1170px)
+{.menu{display: none;}
+    h1{display: none;}
+    .nav{justify-content: space-between;}
+}
+
+.icon-excel {
+    background-image: url("hamburger-menu.svg");
+
+}
+.mainMenu img{width: 50px;
+height: 50px; filter: invert(100%);}
