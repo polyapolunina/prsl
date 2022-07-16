@@ -27,7 +27,7 @@ h1 {
 }
 
 .header {
-    background: url("11111.png") no-repeat center top / cover;
+    background: url("../images/11111.png") no-repeat center top / cover;
 }
 
 header a {
@@ -214,7 +214,7 @@ footer {
 }
 
 .icon-excel {
-    background-image: url("hamburger-menu.svg");
+    background-image: url("../images/hamburger-menu.svg");
 
 }
 
@@ -270,7 +270,7 @@ footer {
         position: absolute;
         padding: 0.5em;
         top: 7.5em;
-        background: url("11111.png") no-repeat;
+        background: url("../images/11111.png") no-repeat;
     }
 
     div.home1 {
@@ -334,7 +334,7 @@ footer {
         position: absolute;
         padding: 0.5em;
         top: 7.5em;
-        background: url("11111.png") no-repeat;
+        background: url("../images/11111.png") no-repeat;
     }
 }
 
@@ -370,7 +370,7 @@ footer {
 
         position: fixed;
         padding: 0.5em;
-        background: url("11111.png") no-repeat;
+        background: url("../images/11111.png") no-repeat;
 
     }
 
@@ -414,7 +414,7 @@ footer {
 
         position: fixed;
         padding: 0.5em;
-        background: url("11111.png") no-repeat;
+        background: url("../images/11111.png") no-repeat;
 
     }
 
