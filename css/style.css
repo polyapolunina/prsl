@@ -142,7 +142,8 @@ div.prsl {
     grid-template-columns: 1fr 1fr;
     justify-items: center;
 }
-.prices:nth-last-of-type(1){
+
+.prices:nth-last-of-type(1) {
     display: flex;
     justify-content: center;
     padding: 35px;
@@ -150,7 +151,8 @@ div.prsl {
     margin-top: 20px;
     border-radius: 10px;
     background: #fff;
-    box-shadow: 0 4px 20px #ccc;}
+    box-shadow: 0 4px 20px #ccc;
+}
 
 div.serv_ {
     display: flex;
@@ -218,7 +220,6 @@ p {
 
 footer {
     background: #003a00;
-    height: 600px;
 }
 
 .icon-excel {
@@ -251,12 +252,13 @@ footer {
     filter: invert(100%);
 
 }
-
+.item a {display: inline-flex; color:white ; text-decoration: none;}
 
 @media(max-width: 1170px) {
     .prices {
         grid-template-columns: 1fr;
     }
+    .footer .container{grid-template-columns: repeat(2,1fr);}
     .menuShow li {
         font-size: 2em;
         font-weight: 500;
@@ -266,11 +268,12 @@ footer {
     .menuShow li a {
         text-decoration: none;
     }
+
     .menu {
         display: none;
     }
 
-  
+
 
     .menuShow {
         display: flex;
@@ -330,8 +333,8 @@ footer {
     div.equip {
         padding-left: 16px;
         padding-right: 16px;
-    } 
-    
+    }
+
     .menu {
         display: none;
     }
@@ -351,7 +354,11 @@ footer {
         width: 350px;
         height: 200px;
     }
-    .mainMenuCloseButton{display: block;}
+
+    .mainMenuCloseButton {
+        display: block;
+    }
+
     .menu {
         display: none;
     }
@@ -448,34 +455,28 @@ footer {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.contact-page {
-    width: 100%;
-    max-width: 1400px;
-    padding: 50px;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    flex-wrap: wrap;
+footer .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
 
-.contact-info{
+.contact-info {
     min-width: 400px;
 }
 
-.contact-info, .contact-form {
-    flex: 1;
-}
+
 
 .item {
-    margin-bottom: 24px;
     font-size: 18px;
     color: white;
+    padding: 12px;
+    display: flex;
+    align-items: center;
 }
 
 .icon {
@@ -489,14 +490,25 @@ footer {
     margin-right: 16px;
 }
 
+i:before {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    display: block;
+}
+
 .contact-form {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex-direction: column;
+
+}
+
+.contact-form label {
+    color: white;
+    font-size: 18px;
 }
 
 .textb {
-    width: calc(50% - 10px);
     height: 50px;
     padding: 12px;
     background-color: whitesmoke;
@@ -508,23 +520,23 @@ footer {
 .btn {
     width: 120px;
     height: 40px;
-    margin-left: auto;
     background-color: honeydew;
     border: none;
     text-transform: uppercase;
 }
 
-.btn:hover{
+.btn:hover {
     background-color: aquamarine;
     color: #003a00;
 }
 
-@media screen and (max-width: 980px){
-    .contact-page{
+@media screen and (max-width: 980px) {
+    .contact-page {
         max-width: 800px;
     }
 
-    .contact-info, .contact-form{
+    .contact-info,
+    .contact-form {
         flex: 100%;
         margin-bottom: 30px;
     }
