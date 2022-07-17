@@ -11,6 +11,11 @@ function menuShowOrClose() {
         menu.className = "menu"
     }
 }
+function menuClose() {
+    if (menu.className == "menuShow") {
+        menu.className = "menu"
+    }
+}
 burger.onclick = () => {
     menuShowOrClose()
 }
@@ -18,6 +23,6 @@ cross.onclick = () => {
     menuShowOrClose()
 }
 menuitem.onclick = () => {
-    menuShowOrClose();
+    menuClose();
 }
 
