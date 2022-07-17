@@ -311,7 +311,7 @@ footer {
         justify-content: space-between;
     }
 }
-
+@media(max-width: 800px){.footer .container{grid-template-columns: 1fr;}}
 
 
 @media(max-width: 600px) {
@@ -472,7 +472,7 @@ footer .container {
 
 
 .item {
-    font-size: 18px;
+    font-size: 22px;
     color: white;
     padding: 12px;
     display: flex;
