@@ -218,7 +218,7 @@ p {
 
 footer {
     background: #003a00;
-    height: 300px;
+    height: 600px;
 }
 
 .icon-excel {
@@ -443,5 +443,93 @@ footer {
         text-decoration: none;
     }
 }
-footer .container{display: grid;
-grid-template-columns: 1fr 1fr 1fr;}
+
+.footer {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-page {
+    width: 100%;
+    max-width: 1400px;
+    padding: 50px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contact-info{
+    min-width: 400px;
+}
+
+.contact-info, .contact-form {
+    flex: 1;
+}
+
+.item {
+    margin-bottom: 24px;
+    font-size: 18px;
+    color: white;
+}
+
+.icon {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    background-color: white;
+    text-align: center;
+    color: #003a00;
+    border-radius: 50%;
+    margin-right: 16px;
+}
+
+.contact-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.textb {
+    width: calc(50% - 10px);
+    height: 50px;
+    padding: 12px;
+    background-color: whitesmoke;
+    border: none;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.btn {
+    width: 120px;
+    height: 40px;
+    margin-left: auto;
+    background-color: honeydew;
+    border: none;
+    text-transform: uppercase;
+}
+
+.btn:hover{
+    background-color: aquamarine;
+    color: #003a00;
+}
+
+@media screen and (max-width: 980px){
+    .contact-page{
+        max-width: 800px;
+    }
+
+    .contact-info, .contact-form{
+        flex: 100%;
+        margin-bottom: 30px;
+    }
+
+    .textb {
+        width: 100%;
+    }
+}
